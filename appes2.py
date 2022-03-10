@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 app = Flask(__name__)
 
 utenti = []
@@ -7,7 +7,7 @@ utenti = []
 
 @app.route('/', methods=['GET'])
 def index():
-    return render_template('home.html')
+    return render_template('register.html')
 
 @app.route('/register', methods=['GET'])
 def register():
